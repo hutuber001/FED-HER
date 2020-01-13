@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gedownloade verhalen</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><img src="images/eurostar1.svg" alt="eurostar">
+                    </a>
+                </li>
+                <li>
+                    <a href="inlog.html">
+                        <img src="images/user.svg" alt="">Inloggen</a>
+                </li>
+                <li>
+                    <a href="" class="link"> <img src="images/search.svg" alt="">Zoeken</a>
+                </li>
+
+                <!-- hamburger -->
+                <li>
+                    <img class="menu" src="images/menu.svg" alt="">
+                </li>
+
+            </ul>
+
+            <!----- Favorieten en gedownloade verhalen bij de navigatie  ----->
+        </nav>
+        <nav>
+            <ul class="headerUitgeklapt">
+                <li>
+                    <a href="favorieten.html">Favoriete verhalen</a>
+                </li>
+                <li>
+                    <a href="downloads.html">Gedownloade verhalen</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!----- Menu uitgeklapt  ----->
+        <div class="menuuitgeklapt">
+            <ul>
+                <li><a href="inlog.html">Inloggen/registreren</a></li>
+                <li><a href="favorieten.html">Favorieten verhalen</a></li>
+                <li><a href="downloads.html">Gedownloade verhalen</a></li>
+                <li><a href="">Zoeken</a></li>
+
+            </ul>
+        </div>
+    </header>
+
+
+<main class="hoofdFormulier">
+    <h1 class="favorietenverhalen">Gedownloade verhalen</h1>
+
+
+        <!----- Filter en sorteer ----->
+        <ul class="filterknoppen">
+            <li>
+                <a href="filter.html">Filter &amp; sorteer
+            <img src="images/filterpijl.svg" alt="filterpijl" ></a>
+            </li>
+
+            <li>
+                <button class="btnsorteer">Sorteren
+                    <img src="images/filterpijl.svg" alt="filterpijl"></button>
+            </li>
+
+            <li>
+                <button class="btngenre">Genre
+                    <img src="images/filterpijl.svg" alt="filterpijl"></button>
+            </li>
+
+            <li>
+                <button class="btntaalgebruik">Taalgebruik
+                    <img src="images/filterpijl.svg" alt="filterpijl"></button>
+            </li>
+        </ul>
+
+        <!----- Sorteer opties ----->
+        <section class="sorteren">
+            <form>
+                <fieldset>
+                    <label>
+                        <input type="radio" name="sorteren">
+                         A-Z
+                    </label>
+                    <label>
+                        <input type="radio" name="sorteren">
+                         Z-A
+                    </label>
+                    <label>
+                        <input type="radio" name="sorteren">
+                         jong-oud
+                    </label>
+                    <label>
+                        <input type="radio" name="sorteren">
+                         A-Z
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+
+        <!--Genre opties -->
+        <section class="genre">
+            <form>
+                <fieldset>
+                    <label>
+                        <input type="checkbox" name="genre">
+                         A-Z
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genre">
+                         Z-A
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genre">
+                         jong-oud
+                    </label>
+                    <label>
+                        <input type="checkbox" name="genre">
+                         A-Z
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+
+        <!----- Taalgebruik opties -->
+        <section class="taalgebruik">
+            <form>
+                <fieldset>
+                    <label>
+                        <input type="radio" name="taalgebruik">
+                         Normaal
+                    </label>
+                    <label>
+                        <input type="radio" name="taalgebruik">
+                         Aggresief
+                    </label>
+                    <label>
+                        <input type="radio" name="taalgebruik">
+                         Lief
+                    </label>
+                    <label>
+                        <input type="radio" name="taalgebruik">
+                         Kinderlijk
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+
+
+    <!--------------Section met alle verhalen------------------>
+     <section>
+            <!----------- Alzheimer ----------->
+
+            <article>
+                <img src="images/alzheimer.jpeg" alt="Alzheimer" class="verhaalimg">
+
+
+                <div>
+                    <a href=""><img src="images/favorietknop.svg" alt="" class="opslaanknop"></a>
+
+                    <a href=""> <img src="images/downloadknop.svg" alt="" class="opslaanknop"></a>
+
+                </div>
+
+                <h3>Alzheimer</h3>
+
+                <img src="images/rating.svg" alt="rating">
+
+                <p>Ik stap uit, euh... Hoe heet het? Zo’n vervoersdinges op wielen. Van de gemeente. Wit met blauw. Kom. Lijn 12. Of was het ...</p>
+
+                 <a href="verhaal.html">Lees meer</a>
+            </article>
+
+            <!----------- Dromen ----------->
+
+            <article>
+                <img src="images/dromen.jpg" alt="dromen" class="verhaalimg">
+
+                <div>
+                    <a href=""><img src="images/favorietknop.svg" alt="" class="opslaanknop"></a>
+
+                    <a href=""> <img src="images/downloadknop.svg" alt="" class="opslaanknop"></a>
+
+                </div>
+
+                <h3>Dromen</h3>
+
+                <img src="images/rating.svg" alt="rating">
+
+                <p>Ik stap uit de bus. Met mijn gedachten in de wolken. Ik loop achter een wagentje aan, waarom weet ik niet ... </p>
+
+                 <a href="verhaal.html">Lees meer</a>
+            </article>
+
+            <!----------- Poepen ----------->
+
+            <article>
+                <img src="images/poepen.png" alt="regiodagblad" class="verhaalimg">
+
+                <div>
+                    <a href=""><img src="images/favorietknop.svg" alt="" class="opslaanknop"></a>
+
+                    <a href=""> <img src="images/downloadknop.svg" alt="" class="opslaanknop"></a>
+
+                </div>
+
+                <h3>Poepen</h3>
+
+                <img src="images/rating.svg" alt="rating">
+
+                <p>Doorgaans van de dag heeft er voor gezorgd dat ik zo erg nodig moet poepen dat mijn kont het niet meer aankan. Mijn maag ...</p>
+
+                 <a href="verhaal.html">Lees meer</a>
+            </article>
+
+        </section>
+        <!----------- Einde section met alle verhalen -------->
+
+
+
+
+</main>
+
+<footer>
+       © 2019 Eurostar International Rebecca Hutubessy. Alle rechten voorbehouden
+
+    </footer>
+
+<script src="script/myscripts.js"></script>
+    </body>
+

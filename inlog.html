@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+
+
+<body>
+
+    <!----- Navigatiebalk ----->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><img src="images/eurostar1.svg" alt="eurostar" class="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/user.svg" alt="">Inloggen</a>
+                </li>
+                <li>
+                    <a href="" class="link"> <img src="images/search.svg" alt="">Zoeken</a>
+                </li>
+
+                <!-- hamburger menu -->
+                <li>
+                    <img class="menu" src="images/menu.svg" alt="">
+                </li>
+
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="headerUitgeklapt">
+                <li>
+                    <a href="favorieten.html">Favoriete verhalen</a>
+                </li>
+                <li>
+                    <a href="downloads.html">Gedownloade verhalen</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!----- Menu uitgeklapt  ----->
+        <div class="menuuitgeklapt">
+            <ul>
+                <li><a href="inlog.html">Inloggen/registreren</a></li>
+                <li><a href="favorieten.html">Favorieten verhalen</a></li>
+                <li><a href="">Gedownloade verhalen</a></li>
+                <li><a href="">Zoeken</a></li>
+
+            </ul>
+        </div>
+
+
+    </header>
+
+    <main class="inlogform">
+
+        <!--Div gebruikt in de fieldset omdat anders display flex niet werkt-->
+        <form action="#">
+            <fieldset>
+                <legend>Inloggen</legend>
+
+                <label> naam
+      <input required type="text" name="naam">
+      </label>
+
+                <label> wachtwoord
+      <input required type="password" name="wachtwoord">
+      </label>
+
+
+                <input type="submit" value="Inloggen">
+            </fieldset>
+
+            <a href="index.html">Account aanmaken</a>
+
+        </form>
+
+
+    </main>
+
+
+    <script src="script/myscripts.js"></script>
+</body>

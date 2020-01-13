@@ -1,0 +1,748 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*Navigatiebar in de header*/
+
+body {
+    margin: auto;
+    width: 100%;
+    font-family: arial;
+    background-color: #F7F7F7;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 0.5em;
+    position: relative;
+    z-index: 30;
+}
+
+nav ul {
+    max-width: 60em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 3em;
+    margin-bottom: 0;
+}
+
+nav:first-of-type li:first-of-type {
+    flex-grow: 1;
+}
+
+nav:first-of-type li:first-of-type img {
+    height: 3em;
+    margin-left: 0;
+}
+
+nav:first-of-type li:last-of-type {
+    display: none;
+}
+
+nav:first-of-type li:nth-of-type(n+2) img {
+    position: relative;
+    top: 0.25em;
+}
+
+nav ul img {
+    height: 1.2em;
+    margin-right: 0.5em;
+    margin-left: 1.5em;
+}
+
+nav ul a {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ONDER NAVIGATIE DOWNLOADS + FAVORIETEN */
+
+nav:last-of-type ul {
+    justify-content: flex-end;
+}
+
+nav:last-of-type ul li {
+    padding: 1em;
+    background-color: #192A4C;
+    margin-left: 1em;
+}
+
+nav:last-of-type ul li:hover {
+    background-color: #354667;
+}
+
+nav:last-of-type ul li:visited {
+    border-bottom: 2px solid #FFE600;
+}
+
+
+/* media queries navigatie */
+
+@media only screen and (max-width: 41.9em) {
+    nav {
+        padding-bottom: 1.5em;
+    }
+    nav:last-of-type {
+        display: none;
+    }
+    nav:first-of-type li:last-of-type {
+        display: flex;
+    }
+    nav:first-of-type li:nth-of-type(2) {
+        display: none;
+    }
+    nav:first-of-type li:nth-of-type(3) {
+        display: none;
+    }
+}
+
+
+/*********Lettertype kopjes en tekst************/
+
+h1 {
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px #000000;
+    font-size: 2.25em;
+    padding-top: 1em;
+}
+
+h2 {
+    color: rgb(85, 86, 90);
+    font-weight: 100;
+    font-size: 2em;
+    text-align: center;
+    padding: 0.5em;
+}
+
+h3 {
+    display: block;
+    width: 100%;
+    color: rgb(85, 86, 90);
+    margin: 0;
+    margin-left: 1.8em;
+    margin-right: 1.8em;
+    padding: 0;
+}
+
+p {
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0;
+    color: black;
+    max-height: 4.5em;
+    overflow: hidden;
+}
+
+a {
+    color: #06183d;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 0.25em;
+}
+
+main ul {
+    list-style: none;
+}
+
+
+/*navigatiebalk in geheel*/
+
+header {
+    background-color: #06183D;
+}
+
+
+/*************Menu uitgeklapt****************/
+
+header div:first-of-type {
+    z-index: 5;
+    background-color: #06183d;
+    position: absolute;
+    width: 100%;
+    transition: 1s ease;
+    transform: translate(0em, -30em);
+}
+
+header div:first-of-type ul li a {
+    color: #ffffff;
+}
+
+header div:first-of-type li {
+    padding-bottom: 3em;
+    list-style: none;
+}
+
+.menuuitgeklapt.active {
+    display: block;
+    margin-top: -1em;
+    transform: translate(0em, 0em);
+}
+
+
+/*banner met foto, gebruik gemaakt van div voor de opmaak zodat ik in csss een foto kan plaatsen */
+
+header div:nth-of-type(2) {
+    background-image: url("https://images.pexels.com/photos/196649/pexels-photo-196649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-position: center center;
+    padding: 1em 3em 1em 3em;
+    padding-bottom: 1em;
+    height: calc(50vh - 3.5em);
+    border-bottom: 0.5em solid rgb(36, 181, 201);
+}
+
+header div:nth-of-type(2) a {
+    background-color: rgb(251, 221, 15);
+    box-shadow: rgb(222, 194, 4) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
+    padding: 0.6em 1.75em;
+    text-decoration: none;
+}
+
+header div:nth-of-type(2) a:hover {
+    background-color: rgb(253, 233, 126);
+}
+
+
+/************* filter ***************/
+
+
+
+/***********Verhalen**********/
+
+
+/*Alle artikelen bij elkaar*/
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+section:nth-of-type(4) {
+    max-width: 80em;
+    margin: auto;
+}
+
+
+/*Gehele artikel*/
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 19em;
+    box-shadow: 0px 2px 2px 2px #e6e6e7;
+    border-radius: 0.25em;
+    margin: 1em;
+    padding-bottom: 2em;
+    background-color: white;
+}
+
+article > a {
+    display: block;
+    width: 100%;
+    background-color: rgb(251, 221, 15);
+    box-shadow: rgb(222, 194, 4) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
+    padding: 0.5em 5em;
+    margin-top: 1.5em;
+    margin-right: 2em;
+    margin-bottom: 0em;
+    margin-left: 2em;
+    border-radius: 0.25em;
+}
+
+article > a:hover {
+    background-color: rgb(253, 233, 126);
+}
+
+
+/*Eerste img in de artikelen, de foto's*/
+
+article>img:first-of-type {
+    width: 100%;
+    height: 9em;
+    border-radius: 4px 4px 0px 0px
+}
+
+
+/*favorieten en download knop*/
+
+div a img {
+    width: 2em;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.25em;
+    padding: 0.4em;
+}
+
+div a img:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/*favorieten en download knop samen bij elkaar*/
+
+article div {
+    position: relative;
+    left: 13.5em;
+    top: -3.25em;
+}
+
+
+/*de rating*/
+
+article img:nth-of-type(2) {
+    width: auto;
+    height: 1.2em;
+    margin-left: 1.8em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+/********Filterknop********/
+
+.filterknoppen img {
+    width: 0.8em;
+}
+
+.filterknoppen li:first-of-type {
+    display: none;
+}
+
+@media only screen and (max-width: 40em) {
+    .filterknoppen li:first-of-type {
+        display: block;
+    }
+}
+
+
+
+
+/**VRAAG????: wil eerst filter en sorteer links hebben en daarna de filters daarna wel in het midden
+
+geprobeerd met :
+
+main ul li:nth-of-type(2+3+4) {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+**/
+
+
+/***********Sorteer opties*************/
+
+.filterknoppen {
+    color: #55565A;
+}
+
+.filterknoppen button {
+    border: none;
+    font-size: 1em;
+    padding: 0.8em;
+    border-radius: 4px;
+    background-color: #F7F7F7;
+
+}
+
+.filterknoppen button:hover {
+    background-color: #7C7C7C;
+}
+
+.filterknoppen button: {
+    background-color: #1E93A2;
+}
+
+
+.hoofdFormulier section:nth-of-type(-n+3) {
+    position: absolute;
+    z-index: 10;
+    opacity: 100%;
+    background-color: #ffffff;
+    width: 10em;
+    padding: 1em;
+    box-shadow: 1px 1px 10px 1px #888888;
+    border-radius: 0.25em;
+    margin-top: 0;
+    left: 50%;
+    transition: 0.3s ease-in;
+
+}
+
+.hoofdFormulier section:nth-of-type(1) {
+    opacity: 0%;
+}
+
+.hoofdFormulier section:nth-of-type(1).active {
+    opacity: 100%;
+}
+
+
+.hoofdFormulier section:nth-of-type(2) {
+    opacity: 0%;
+}
+
+.hoofdFormulier section:nth-of-type(2).active {
+    opacity: 100%;
+}
+
+.hoofdFormulier section:nth-of-type(3) {
+    opacity: 0%;
+}
+
+.hoofdFormulier section:nth-of-type(3).active {
+    opacity: 100%;
+}
+
+
+
+.hoofdFormulier fieldset {
+    border: none;
+}
+
+.hoofdFormulier label {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.hoofdFormulier input {
+    margin-right: 1em;
+}
+
+
+/***** sorteren uitgeklapt ******/
+
+.sorteren {
+    margin-left: -12em;
+    opacity: 0%;
+}
+
+.sorteren.active {
+    opacity: 100%;
+}
+
+
+/*****Genre uitgeklapt****/
+
+.genre {
+    margin-left: -2.9em;
+}
+
+.genre.active {
+    opacity: 100%;
+}
+
+
+/*****Taalgebruik uitgeklapt****/
+
+.taalgebruik {
+    margin-left: 4.3em;
+}
+
+.taalgebruik.active {
+    opacity: 100%;
+}
+
+
+/**Radiobuttons**/
+
+main form p {
+    width: 100%;
+    margin-left: -2.8em;
+    margin-bottom: -1em;
+}
+
+
+/**uitgeklapte filters staan nu in het midden**/
+
+
+/*main ul:first-of-type*/
+
+.filterknoppen {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+main ul li {
+    padding-right: 2em;
+}
+
+
+/********Media Queries andere filter opties verschijnen bij breedte na 35 em ********/
+
+@media only screen and (max-width: 40em) {
+    main>ul>li:nth-of-type(n+2) {
+        display: none;
+    }
+}
+
+
+/**********Verhaal responsive, verhaal html**********/
+
+#desktop {
+    width: 100%;
+}
+
+#tablet,
+#mobiel {
+    width: 100%;
+    display: none;
+}
+
+@media only screen and (max-width: 61.5em) {
+    #desktop {
+        display: none;
+    }
+    #tablet {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 26em) {
+    #tablet {
+        display: none;
+    }
+    #mobiel {
+        display: block;
+    }
+}
+
+/*Rating onder het verhaal*/
+
+
+.ratingfooter {
+    background-color: #06183D;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
+    margin: 0;
+
+}
+
+.ratingfooter p {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 1em;
+    padding-right: 5em;
+}
+
+.ratingfooter img:first-of-type {
+    width: 10em;
+}
+
+.ratingfooter img:nth-of-type(n+2) {
+    width: 2em;
+    padding-top: 1em;
+}
+
+
+
+footer img {
+    width: 9em;
+    margin-left: 3.5em;
+    margin-top: 0.2em;
+}
+
+footer {
+    background-color: #D4F1F5;
+    padding: 3em;
+    box-shadow: 0px 2px 2px 2px #e6e6e7;
+    border-radius: 4px;
+    font-size: 0.8em;
+    padding-top: 5em;
+
+}
+
+
+
+/**********Filter pagina**********/
+
+.filter {
+    background-color: white;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 0.1em #E6E6E7;
+}
+
+.filter h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.filter img {
+    width: 1.8em;
+}
+
+.filter a {
+    color: #0F9FB3;
+    text-decoration: none;
+}
+
+.filter a:hover {
+    text-decoration: underline #0F9FB3;
+}
+
+/* filteropties beneden */
+
+.filteropties ul {
+    width: 100%;
+    max-width: 27.6em;
+    margin: auto;
+    padding: 0;
+}
+
+.filteropties ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 27.6;
+    margin: 0;
+    padding: 1em 0em;
+    border-bottom: solid 0.1em #E6E6E7;
+}
+
+.filteropties a {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.toonresultaten {
+    display: block;
+    width: 100%;
+    max-width: 40em;
+    background-color: rgb(251, 221, 15);
+    padding: 1em 5em;
+    margin-top: 22.5em;
+    margin-right: auto;
+    margin-bottom: 0em;
+    margin-left: auto;
+    border-radius: 0.25em;
+}
+
+button:hover {
+    background-color: rgb(253, 233, 126);
+}
+
+.filteropties img {
+    width: 1.3em;
+}
+
+
+/* INLOG PAGINA */
+
+form a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+.inlogform {
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.inlogform > form {
+    width: 30em;
+    background-color: white;
+    padding: 2em;
+}
+
+.inlogform legend {
+    font-size: 1.2em;
+    color: #06183D;
+}
+
+.inlogform label {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-top: 1.5em;
+}
+
+.inlogform input {
+    display: block;
+    width: 100%;
+    border: 1px solid #24B5C9;
+    padding: 1.25em;
+    margin: 0;
+    margin-top: 1em;
+    transition: all 2s;
+    border-radius: 0.5em;
+}
+
+
+/* de > geeft aan dat het de directe input in de fieldset is, dus niet de input uit in de labels */
+
+.inlogform fieldset>input {
+    background-color: rgb(251, 221, 15);
+    border: none;
+    font-size: 1em;
+    padding: 0.75em;
+    transition: 0.3s;
+}
+
+.inlogform fieldset>input:hover {
+    background-color: rgb(253, 233, 126);
+}
+
+.inlogform fieldset {
+    border: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Favorieten verhalen pagina */
+
+.favorietenverhalen {
+    background-color: #D4F1F5;
+    color: #06183D;
+    text-shadow: none;
+    margin-top: 0;
+    padding: 1em 2em 1em 1em;
+}
+
+#favorietdownload {
+    background-color: #24B5C9;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    border-radius: 0.25em;
+}
+
+
